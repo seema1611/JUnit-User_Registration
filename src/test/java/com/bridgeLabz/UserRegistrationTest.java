@@ -73,4 +73,16 @@ public class UserRegistrationTest {
         UserRegistration userRegistration = new UserRegistration();
         Assert.assertFalse(userRegistration.validateSecondPassword("seemayuugjhjkh"));
     }
+
+    @Test
+    public void givenMinimum1NumericPassword_WhenValid_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertTrue(userRegistration.validateThirdPassword("SeemaRajpure16"));
+    }
+
+    @Test
+    public void givenMinimum1NumericPassword_WhenNotValid_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertFalse(userRegistration.validateThirdPassword("seemarajpure"));
+    }
 }

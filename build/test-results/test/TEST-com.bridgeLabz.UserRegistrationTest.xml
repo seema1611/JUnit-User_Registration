@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgeLabz.UserRegistrationTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-04-20T17:41:44" hostname="LAPTOP-4IU1M5UJ" time="0.006">
+<testsuite name="com.bridgeLabz.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-20T18:29:00" hostname="LAPTOP-4IU1M5UJ" time="0.002">
   <properties/>
-  <testcase name="givenLastName_WhenValid_ShouldReturnTrue" classname="com.bridgeLabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenFirstName_WhenNotValid_ShouldReturnFalse" classname="com.bridgeLabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenMinimum8CharacterPassword_WhenValid_ShouldReturnTrue" classname="com.bridgeLabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenEmail_WhenNotValid_ShouldReturnFalse" classname="com.bridgeLabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenMobileNumber_WhenNotValid_ShouldReturnFalse" classname="com.bridgeLabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenMobileNumber_WhenValid_ShouldReturnTrue" classname="com.bridgeLabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenFirstName_WhenValid_ShouldReturnTrue" classname="com.bridgeLabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenMinimum1UppercasePassword_WhenNotValid_ShouldReturnTrue" classname="com.bridgeLabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenMinimum8CharacterPassword_WhenNotValid_ShouldReturnTrue" classname="com.bridgeLabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenEmail_WhenValid_ShouldReturnTrue" classname="com.bridgeLabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenLastName_WhenNotValid_ShouldReturnFalse" classname="com.bridgeLabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenMinimum1UppercasePassword_WhenValid_ShouldReturnTrue" classname="com.bridgeLabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenMinimum1NumericPassword_WhenValid_ShouldReturnTrue" classname="com.bridgeLabz.UserRegistrationTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
