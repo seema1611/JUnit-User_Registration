@@ -22,4 +22,8 @@ public class UserRegistration {
     public boolean validateFirstPassword(String firstPassword) {
         return Pattern.matches("^[A-za-z]{8,}$",firstPassword);
     }
+
+    public boolean validateSecondPassword(String secondPassword) {
+        return Pattern.matches("^(?=.*[A-Z])[A-Za-z]{8,}$",secondPassword);
+    }
 }

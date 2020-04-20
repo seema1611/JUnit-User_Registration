@@ -61,4 +61,16 @@ public class UserRegistrationTest {
         UserRegistration userRegistration = new UserRegistration();
         Assert.assertFalse(userRegistration.validateFirstPassword("seeMA"));
     }
+
+    @Test
+    public void givenMinimum1UppercasePassword_WhenValid_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertTrue(userRegistration.validateSecondPassword("SeemaRajpure"));
+    }
+
+    @Test
+    public void givenMinimum1UppercasePassword_WhenNotValid_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertFalse(userRegistration.validateSecondPassword("seemayuugjhjkh"));
+    }
 }
