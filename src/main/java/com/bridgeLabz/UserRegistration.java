@@ -14,4 +14,8 @@ public class UserRegistration {
     public boolean validateEmail(String email) {
         return Pattern.matches("^[A-Za-z]{3,}([.|+|_|-]?[A-Za-z0-9]+)?[@][A-Za-z0-9]+[.][A-Za-z]{2,4}([.][A-Za-z]{2,4}+)?$",email);
     }
+
+    public boolean validateMobileNumber(String mobileNumber) {
+        return Pattern.matches("^[0-9]{1,3}[ ][1-9]{1}[0-9]{9}$",mobileNumber);
+    }
 }
