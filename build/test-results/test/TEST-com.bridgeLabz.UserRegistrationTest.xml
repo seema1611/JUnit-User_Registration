@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgeLabz.UserRegistrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-04-20T15:05:07" hostname="LAPTOP-4IU1M5UJ" time="0.002">
+  <properties/>
+  <testcase name="givenFirstName_WhenNotValid_ShouldReturnFalse" classname="com.bridgeLabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenFirstName_WhenValid_ShouldReturnTrue" classname="com.bridgeLabz.UserRegistrationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
