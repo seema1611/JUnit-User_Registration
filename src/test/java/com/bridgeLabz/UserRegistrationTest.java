@@ -49,4 +49,16 @@ public class UserRegistrationTest {
         UserRegistration userRegistration = new UserRegistration();
         Assert.assertFalse(userRegistration.validateMobileNumber("91 0957452345"));
     }
+
+    @Test
+    public void givenMinimum8CharacterPassword_WhenValid_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertTrue(userRegistration.validateFirstPassword("SeemaRajpure"));
+    }
+
+    @Test
+    public void givenMinimum8CharacterPassword_WhenNotValid_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertFalse(userRegistration.validateFirstPassword("seeMA"));
+    }
 }

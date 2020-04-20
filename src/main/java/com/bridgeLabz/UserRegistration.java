@@ -18,4 +18,8 @@ public class UserRegistration {
     public boolean validateMobileNumber(String mobileNumber) {
         return Pattern.matches("^[0-9]{1,3}[ ][1-9]{1}[0-9]{9}$",mobileNumber);
     }
+
+    public boolean validateFirstPassword(String firstPassword) {
+        return Pattern.matches("^[A-za-z]{8,}$",firstPassword);
+    }
 }
