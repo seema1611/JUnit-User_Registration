@@ -27,4 +27,15 @@ public class UserRegistrationTest {
         UserRegistration userRegistration = new UserRegistration();
         Assert.assertFalse(userRegistration.validateLastName("RajPure"));
     }
+
+    @Test
+    public void givenEmail_WhenValid_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertTrue(userRegistration.validateEmail("seemarajpure16@gmail.co.in"));
+    }
+    @Test
+    public void givenEmail_WhenNotValid_ShouldReturnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertFalse(userRegistration.validateEmail("SeeMaRajpure16@gmail.16.com"));
+    }
 }
