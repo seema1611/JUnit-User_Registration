@@ -33,6 +33,7 @@ public class UserRegistrationTest {
         UserRegistration userRegistration = new UserRegistration();
         Assert.assertTrue(userRegistration.validateEmail("seemarajpure16@gmail.co.in"));
     }
+
     @Test
     public void givenEmail_WhenNotValid_ShouldReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
@@ -44,6 +45,7 @@ public class UserRegistrationTest {
         UserRegistration userRegistration = new UserRegistration();
         Assert.assertTrue(userRegistration.validateMobileNumber("91 8957452345"));
     }
+
     @Test
     public void givenMobileNumber_WhenNotValid_ShouldReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
@@ -51,38 +53,14 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void givenMinimum8CharacterPassword_WhenValid_ShouldReturnTrue() {
+    public void givenPassword_WhenValid_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        Assert.assertTrue(userRegistration.validateFirstPassword("SeemaRajpure"));
+        Assert.assertTrue(userRegistration.validatePassword("SeemaRajpure@123"));
     }
 
     @Test
-    public void givenMinimum8CharacterPassword_WhenNotValid_ShouldReturnTrue() {
+    public void givenPassword_WhenNotValid_ShouldReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
-        Assert.assertFalse(userRegistration.validateFirstPassword("seeMA"));
-    }
-
-    @Test
-    public void givenMinimum1UppercasePassword_WhenValid_ShouldReturnTrue() {
-        UserRegistration userRegistration = new UserRegistration();
-        Assert.assertTrue(userRegistration.validateSecondPassword("SeemaRajpure"));
-    }
-
-    @Test
-    public void givenMinimum1UppercasePassword_WhenNotValid_ShouldReturnTrue() {
-        UserRegistration userRegistration = new UserRegistration();
-        Assert.assertFalse(userRegistration.validateSecondPassword("seemayuugjhjkh"));
-    }
-
-    @Test
-    public void givenMinimum1NumericPassword_WhenValid_ShouldReturnTrue() {
-        UserRegistration userRegistration = new UserRegistration();
-        Assert.assertTrue(userRegistration.validateThirdPassword("SeemaRajpure16"));
-    }
-
-    @Test
-    public void givenMinimum1NumericPassword_WhenNotValid_ShouldReturnTrue() {
-        UserRegistration userRegistration = new UserRegistration();
-        Assert.assertFalse(userRegistration.validateThirdPassword("seemarajpure"));
+        Assert.assertFalse(userRegistration.validatePassword("%seema@Ra123"));
     }
 }

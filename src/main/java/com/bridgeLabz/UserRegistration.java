@@ -19,15 +19,7 @@ public class UserRegistration {
         return Pattern.matches("^[0-9]{1,3}[ ][1-9]{1}[0-9]{9}$",mobileNumber);
     }
 
-    public boolean validateFirstPassword(String firstPassword) {
-        return Pattern.matches("^[A-za-z]{8,}$",firstPassword);
-    }
-
-    public boolean validateSecondPassword(String secondPassword) {
-        return Pattern.matches("^(?=.*[A-Z])[A-Za-z]{8,}$",secondPassword);
-    }
-
-    public boolean validateThirdPassword(String thirdPassword) {
-        return Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}",thirdPassword);
+    public boolean validatePassword(String password) {
+        return Pattern.matches("^^(?=[^@|#|$|%|!|&]*[@|#|$|%|!|&][^@|#|$|%|!|&]*$)(?=.*[0-9])(?=.*[A-Z])[A-Za-z0-9@#$%!&]{8,}$",password);
     }
 }
